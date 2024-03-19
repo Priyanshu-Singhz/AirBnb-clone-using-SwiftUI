@@ -20,6 +20,8 @@ struct SearchAndFilterBar: View {
                     .font(.caption2)
                     .foregroundStyle(.gray)
             }
+            
+            
                 Spacer()
                 
                 Button(action: {}, label: {
