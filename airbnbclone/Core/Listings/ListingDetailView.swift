@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ListingDetailView: View {
     var images = [
@@ -105,6 +106,7 @@ struct ListingDetailView: View {
             
             Divider()
             
+            //bedrooms view
             VStack(alignment: .leading){
                 Text("Where you'll sleep")
                     .font(.headline)
@@ -115,13 +117,54 @@ struct ListingDetailView: View {
                             VStack{
                                 Image(systemName: "bed.double")
                                 
-                                
-                                
+                                Text("Bedroom \(bedroom)")
                             }
+                            .frame(width: 132, height: 100)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(lineWidth: 1)
+                                    .foregroundStyle(.gray)
+                            )
                         }
                     }
                 }
+                .scrollTargetBehavior(.paging)
             }
+            .padding()
+            
+            Divider()
+            
+            //listing amenities
+            VStack(alignment: .leading ,spacing: 16){
+                Text("What this place offers")
+                    .font(.headline)
+                
+                ForEach(0 ..< 5){ feature in
+                    HStack{
+                        Image(systemName: "wifi")
+                            .frame(width: 32)
+                        
+                        Text("wifi")
+                            .font(.footnote)
+                        
+                        Spacer()
+                    }
+                }
+            }
+            .padding(/*@START_MENU_TOKEN@*/EdgeInsets()/*@END_MENU_TOKEN@*/)
+            
+            Divider()
+            
+            VStack(alignment: .leading,spacing: 16){
+                Text("Where you'll be")
+                    .font(.headline)
+                Map()
+                    .frame(height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                
+            }
+            .padding()
+            
             
             
         }
