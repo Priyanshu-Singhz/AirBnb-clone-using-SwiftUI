@@ -16,6 +16,7 @@
 		BDB423F02BA98C220028FABB /* SearchAndFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB423EF2BA98C220028FABB /* SearchAndFilterBar.swift */; };
 		BDB423F22BA9937D0028FABB /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB423F12BA9937D0028FABB /* ListingDetailView.swift */; };
 		BDB423F52BA993E90028FABB /* ListingImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB423F42BA993E90028FABB /* ListingImageCarouselView.swift */; };
+		BDB423F72BA9B8F50028FABB /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB423F62BA9B8F50028FABB /* DestinationSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BDB423EF2BA98C220028FABB /* SearchAndFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBar.swift; sourceTree = "<group>"; };
 		BDB423F12BA9937D0028FABB /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailView.swift; sourceTree = "<group>"; };
 		BDB423F42BA993E90028FABB /* ListingImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingImageCarouselView.swift; sourceTree = "<group>"; };
+		BDB423F62BA9B8F50028FABB /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				BD504CEA2BA96A3D00A9BD55 /* ExploreView.swift */,
 				BDB423EF2BA98C220028FABB /* SearchAndFilterBar.swift */,
+				BDB423F62BA9B8F50028FABB /* DestinationSearchView.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB423F52BA993E90028FABB /* ListingImageCarouselView.swift in Sources */,
+				BDB423F72BA9B8F50028FABB /* DestinationSearchView.swift in Sources */,
 				BD504CD12BA9687D00A9BD55 /* ContentView.swift in Sources */,
 				BD504CED2BA96D9600A9BD55 /* ListingItemView.swift in Sources */,
 				BD504CEB2BA96A3D00A9BD55 /* ExploreView.swift in Sources */,

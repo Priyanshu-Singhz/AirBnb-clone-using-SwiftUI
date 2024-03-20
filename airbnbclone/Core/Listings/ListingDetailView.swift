@@ -24,8 +24,7 @@ struct ListingDetailView: View {
                     .frame(height: 320)
                 
                 Button{
-                    dismiss
-                    
+                    dismiss()
                 } label: {
                     Image(systemName: "chevron.left")
                         .foregroundStyle(.black)
